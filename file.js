@@ -25,8 +25,6 @@ fs.writeFile("./awesome.html", quote, (err) => {
     console.log("Completed writing !!");
 });
 
-
-
 const quote2 = "Live more, worry less 😃😃";
 for(let i=1; i<=10; i++){
     fs.writeFile(`./backup/text-${i}.html`, quote2, (err) => {
@@ -88,7 +86,6 @@ fs.appendFile("./nice.txt", niceQuote, (err) => {
 // })
 // )
 
-
 // files.forEach((fileName) =>
 // fs.unlink(`./backup/${fileName}`, (err) => {
 //     console.log("Deleted file !!! ✨");
@@ -96,6 +93,7 @@ fs.appendFile("./nice.txt", niceQuote, (err) => {
 // )
 
 // });
+
 const dateObject = new Date();
 // current date
 // adjust 0 before single digit date
