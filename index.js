@@ -1,7 +1,9 @@
 
 // To connect with your mongoDB database
 const mongoose = require('mongoose');
-  
+// import dotenv from "dotenv";
+
+
 mongoose.connect(
   'mongodb://localhost:27017/',
   {
@@ -33,7 +35,7 @@ const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-const port = process.env.PORT || 5000;  
+ // const port = process.env.PORT || 5000;  
 const RoomBooked = mongoose.model('users', UserSchema);
 RoomBooked.createIndexes();
   
