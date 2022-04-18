@@ -35,7 +35,7 @@ const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
- // const port = process.env.PORT || 5000;  
+  const port = process.env.PORT || 5000;  
 const RoomBooked = mongoose.model('users', UserSchema);
 RoomBooked.createIndexes();
   
